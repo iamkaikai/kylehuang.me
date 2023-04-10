@@ -1,7 +1,7 @@
 let selected_id = 0;  //to check whether an answer is checked
 let question_counter = 0;
 let cur_question = 0;
-let questoin_numb = 1;
+let questoin_numb = 10;
 let total_score = 0;
 let json_path = "./data1.json"
 
