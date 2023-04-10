@@ -54,8 +54,8 @@
             "id": 5,
             "question": "What does “Wubba Lubba Dub Dub” really mean?",
             "answers":[
-                {"option": "What's up, dude?", "value": 1},
-                {"option": "I'm in great pain, help", "value": 0},
+                {"option": "What's up, dude?", "value": 0},
+                {"option": "I'm in great pain, help", "value": 1},
                 {"option": "Bring me another!", "value": 0},
                 {"option": "I'm so happy", "value": 0}
             ]
