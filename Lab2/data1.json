@@ -1,0 +1,127 @@
+{
+    "quiz": [
+        {
+            "id": 0,
+            "question": "What is the name of Morty's math teacher?",
+            "answers":[
+                {"option": "Mr. Oaken", "value": 0},
+                {"option": "Mr. Smith", "value": 0},
+                {"option": "Mr. Goldfinger", "value": 0},
+                {"option": "Mr. Goldenfold", "value": 1}
+            ]
+        },
+        {
+            "id": 1,
+            "question": "What is the dimension of Rick's home planet?",
+            "answers":[
+                {"option": "C-42", "value": 0},
+                {"option": "C-124", "value": 0},
+                {"option": "C-137", "value": 1},
+                {"option": "C-256", "value": 0}
+            ]
+        },
+        {
+            "id": 2,
+            "question": "What is the name of the episode where Rick turns himself into a pickle?",
+            "answers":[
+                {"option": "Pickle Rick", "value": 1},
+                {"option": "The Rickshank Redemption", "value": 0},
+                {"option": "Total Rickall", "value": 0},
+                {"option": "Mortynight Run", "value": 0}
+            ]
+        },
+        {
+            "id": 3,
+            "question": "Which animal does Rick use in Morty’s love potion?",
+            "answers":[
+                {"option": "Unicorn", "value": 0},
+                {"option": "Vole", "value": 1},
+                {"option": "Cat", "value": 0},
+                {"option": "Horse", "value": 0}
+            ]
+        },
+        {
+            "id": 4,
+            "question": "Who voices Rick and Morty?",
+            "answers":[
+                {"option": "Justin Roiland", "value": 1},
+                {"option": "Dan Harmon", "value": 0},
+                {"option": "Chris Parnell", "value": 0},
+                {"option": "Sarah Chalke", "value": 0}
+            ]
+        },
+        {
+            "id": 5,
+            "question": "What does “Wubba Lubba Dub Dub” really mean?",
+            "answers":[
+                {"option": "What's up, dude?", "value": 1},
+                {"option": "I'm in great pain, help", "value": 0},
+                {"option": "Bring me another!", "value": 0},
+                {"option": "I'm so happy", "value": 0}
+            ]
+        },
+        {
+            "id": 6,
+            "question": "Morty’s son is half-human, half-_____?",
+            "answers":[
+                {"option": "Mr. Meeseeks", "value": 0},
+                {"option": "Krombopulous", "value": 0},
+                {"option": "Gromflamites", "value": 0},
+                {"option": "Gazorpian", "value": 1}
+            ]
+        },
+        {
+            "id": 7,
+            "question": "What is Morty’s favorite television show?",
+            "answers":[
+                {"option": "Poopsmiths", "value": 0},
+                {"option": "Ball Fondlers", "value": 1},
+                {"option": "Jam Bangers", "value": 0},
+                {"option": "Knee Kickers", "value": 0}
+            ]
+        },
+        {
+            "id": 8,
+            "question": "What does Scary Terry like to say?",
+            "answers":[
+                {"option": "No!", "value": 0},
+                {"option": "Die!!", "value": 0},
+                {"option": "Slay~", "value": 0},
+                {"option": "Bitch!", "value": 1}
+            ]
+        },
+        {
+            "id": 9,
+            "question": "Which movie is Jerry’s favorite?",
+            "answers":[
+                {"option": "Avatar", "value": 0},
+                {"option": "Jaws", "value": 0},
+                {"option": "Titanic", "value": 1},
+                {"option": "Star War", "value": 0}
+            ]
+        }
+    ],
+    "result": [
+        {
+            "title": "Wow, you really screwed the pooch on this one",
+            "description": "Yikes, it seems like you are as smart as Jerry",
+            "img": "./assets/result1.gif"
+        },
+        {
+            "title": "You're really gonna have to work on your smarts",
+            "description": " You're not quite a Jerry, but you're also not quite a Morty",
+            "img": "./assets/result2.gif"
+        },
+        {
+            "title": "Oh man, oh geez, we did pretty good, huh ",
+            "description": " Keep it up, and you might be able to outsmart a Gromflomite someday!",
+            "img": "./assets/result3.gif"
+        },
+        {
+            "title": "Wubba lubba dub dub! You're a genius like Rick",
+            "description": "or at least a very talented fart-saving scientist like Krombopulos Michael",
+            "img": "./assets/result4.gif"
+        }
+        
+    ]
+}
