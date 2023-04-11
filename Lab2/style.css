@@ -38,7 +38,7 @@ p{
 
 #side-bg{
 	height: 100%;
-  width: 100%;
+  width: 408px;
 }
 
 .left{
@@ -204,4 +204,45 @@ input[type="radio"] {
   background: black !important;
 }
 
+
+@media (max-width: 768px) {
+  .left{
+    margin-left: 0;
+  }
+  #left-all{
+    width: 100vw;
+  }
+  #welcome{
+    width: 100vw;
+    padding: 0 5vw;
+  }
+  .question-wrap{
+    width: 90vw;
+    transform: translateX(5vw);
+  }
+  .pill{
+    width: 75vw
+  }
+  #right-all{
+    width: 100vw;
+    height: 140px;
+    left: 0;
+  }
+  h3{
+    width: 90vw;
+  }
+  .pill-answer,.pill-next{
+    width: 90vw;
+  }
+  #side-bg{
+    width: 100vw;
+  }
+  .result{
+    width: 90vw;
+    margin-left: 0;
+  }
+  #result_img{
+    width: 50vw;
+  }
+}
 

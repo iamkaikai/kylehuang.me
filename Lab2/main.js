@@ -57,7 +57,7 @@ for(i=0; i<questoin_numb; i++){
   question_counter+=1;    
 }
 
-var img = $('<img src="assets/side-bg.jpeg" id="side-bg">');
+var img = $('<img src="assets/side-bg.jpg" id="side-bg">');
 $('#right-all').append(img);
 
 
@@ -65,6 +65,7 @@ $('#right-all').append(img);
 $('#start').on('click', function(e) {
   $("#welcome").addClass("fade-out");
   $("#questions").addClass("fade-in");
+  $('#side-bg').attr('src', 'assets/q1.jpg')
 });
 
 
@@ -86,6 +87,9 @@ $('.pill-next').on('click', function(e) {
     selected_answer = 'label[id^=' + cur_question + '].selected';
     total_score += parseInt($(selected_answer).attr('value'));
     console.log("total_score = "+total_score);
+    q_img_path = 'assets/q'+(cur_question+2)+'.jpg'
+    console.log(q_img_path);
+    $('#side-bg').attr('src', q_img_path);
 
     if(cur_question == questoin_numb-1){
       var result = $('<div class="result fade-in" id="result1"></div>');
@@ -102,7 +106,9 @@ $('.pill-next').on('click', function(e) {
 
       $('#left-all').append(result);
       $(this).parent().addClass("fade-out");
-
+      $('#side-bg').attr('src', 'assets/side-bg.jpg');
+      
+;
     }else{
       $(this).parent().removeClass("fade-in");
       $(this).parent().addClass("fade-out");
