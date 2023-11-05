@@ -107,14 +107,22 @@ nav ul{
 #top-sub-nav li:not(:first-child) {
 	padding: 0 14px;
 }
-
+#top-sub-nav{
+	position: fixed;
+	z-index: 999;
+	background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px); 
+    width: 100vw;
+	padding-bottom: 60px;
+	transition: margin-top 0.1s ease-out 0s;
+}
 
 #top-sub-nav ul{
-       justify-content: space-between;
+    justify-content: space-between;
     align-items: center;
     margin: auto;
     padding: 30px 8px 30px 0px;
-}
+	}
 
 #top-sub-nav li:first-child{
 	margin-right: auto;
@@ -195,7 +203,7 @@ button {
 }
 #features {
     position: relative;
-    margin: -100.5vh auto;
+    margin: -120vh auto;
     width: 100vw;
     overflow: auto;
     height: 101%;
@@ -363,7 +371,8 @@ button {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -56.5%);
-    width: 111vw;
+    /* width: 111vw; */
+	width: 100vw;
     z-index: -2;
 }
 
@@ -506,7 +515,7 @@ button {
 }
 
 #audio-section h1{
-	margin-top: 1rem;
+	margin: 1rem 0 2rem;
 }
 
 #audio-section h5:nth-child(3){
@@ -518,8 +527,9 @@ button {
     padding: 2rem 0;
 }
 
-#X-ray .left-container{
-
+#X-ray h1{
+	font-size: 10rem;
+	line-height: 10rem;
 }
 
 #X-ray .flex{
@@ -530,25 +540,12 @@ button {
     height: 120vh;
 }
 
-#X-ray .right-container{
-	height: 80vh;
-	overflow: hidden;
-}
-
 #X-ray .highlight{
 	color: white;
 	font-weight: 600;
 	padding-bottom: 1rem;
 }
 
-#X-ray .right-container p{
-    color: rgb(110, 110, 115);
-    letter-spacing: 0.01rem;
-    font-weight: 400;
-    padding: 20rem 0 5rem 0;
-    animation: slider3 15s ease-in-out infinite;
-    transform: translateY(0%);
-}
 
 @keyframes slider3{
 	0%{
@@ -581,19 +578,19 @@ button {
 	}
 	49%{
 		opacity: 0;
-		transform: translateY(-200%);
+		transform: translateY(-205%);
 	}
 	50%{
 		opacity: 1;
-		transform: translateY(-200%);
+		transform: translateY(-205%);
 	}
 	70%{
 		opacity: 1;
-		transform: translateY(-200%);
+		transform: translateY(-205%);
 	}
 	73%{
 		opacity: 0;
-		transform: translateY(-210%);
+		transform: translateY(-205%);
 	}
 	74%{
 		opacity: 0;
@@ -607,11 +604,12 @@ button {
 
 
 #computational-audio h2{
-	font-size: 5rem;
+	font-size: 7rem;
+	line-height: 7rem;
 }
 
 .description{
-	width: 1024px;
+	width: 1124px;
 	margin: auto;
 }
 
@@ -620,7 +618,10 @@ button {
 }
 .description h6{
     padding: 3rem 0 8rem 0;
-    width: 40rem;
+    width: 65rem;
+	font-weight: 500;
+	font-size: 1.8rem;
+	line-height: 2.1rem;
 }
 
 #computational-audio .highlight{
@@ -653,6 +654,11 @@ button {
 	margin-bottom: 1rem;
 }
 
+.flex .left-container h6{
+	width: 80%;
+    margin: 16px auto;
+}
+
 .flex .right-container h6:last-child{
 	margin-top: 1.8rem;
 }
@@ -670,6 +676,8 @@ button {
 	left: 50%;
     transform: translateX(-50%);
     position: absolute;
+	bottom: 0;
+    top: auto;
 }
 
 #tracking-background {
@@ -681,7 +689,7 @@ button {
 
 #tracking-wave-top {
 	z-index: 2;
-    top: 2rem;
+    top: 2rem !important;
     width: 90vh;
     opacity: 0.7;
 	margin-left: 3rem;
@@ -708,14 +716,6 @@ button {
 	color: white;
 }
 
-
-
-#others-section {
-	width: 90vw;
-    margin: auto;
-    padding: 4rem 0;
-}
-
 #others-section .row {
     background: #f2f2f2;
     margin: 1.5rem 0;
@@ -728,18 +728,14 @@ button {
 #engraving {
 	justify-content: space-between;
 	align-items: center;
+	display: grid !important;
+    grid-template-columns: 29% 1fr 659px;
 }
 
 #engraving #right-container {
 	margin-right: -156px;
     height: 473px;
-}
-
-.row-p {
-	line-height: 1.5625rem;
-    font-weight: 300;
-    padding-bottom: 0.75rem;
-    width: 316px;
+	margin-left: 0;
 }
 
 .row_title {
@@ -922,9 +918,99 @@ footer ol li{
 	padding: 0.5rem 0 1.5rem 0;
 }
 
+@media(max-width: 2560px){
+	.flex{
+		padding-bottom: 280px;
+	}
+	#anatomy{
+		height: 80vh;
+	}
+	.three-mid-container img{
+		height: 75%;
+	}
+	.three-right-container{
+		margin-top: 19rem;
+	}
+	.three-left-container h6:nth-of-type(2){
+		padding: 24rem 0 0 0 !important;
+	}
+	#X-ray .right-container p{
+		color: rgb(110, 110, 115);
+		letter-spacing: 0.01rem;
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 2rem;
+		padding: 20rem 0 5rem 0;
+		animation: slider3 15s ease-in-out infinite;
+		transform: translateY(0%);
+		width: 36rem;
+	}
+	#X-ray .right-container{
+		height: 70vh;
+		overflow-y: clip;
+		margin-top: 10rem;
+	}
+	#others-section {
+		width: 60vw;
+		margin: auto;
+		padding: 4rem 0;
+	}
+	#right-container{
+		width: 19vw;
+	}
+	#ar #left-container{
+		margin-right: 60px;
+		margin-left: 100px;
+	}
+	#left-container{
+		margin-left: -4rem;
+	}
+	.row-p {
+		line-height: 1.5625rem;
+		font-weight: 300;
+		padding-bottom: 0.75rem;
+		width: 370px;
+	}
+	#music #left-container{
+		margin-left: 0;
+	}
+}
 
+@media(max-width: 1920px){
+	.flex{
+		padding-bottom: 0px;
+	}
+	#anatomy{
+		height: 120vh;
+	}
+	.three-mid-container img{
+		height: 100%;
+	}
+	.three-right-container{
+		margin-top: 24rem;
+	}
+	.three-left-container h6:nth-of-type(2){
+		padding: 38rem 0 0 0 !important;
+	}
+	#X-ray .right-container p{
+		width: 28rem;
+	}
+	#others-section {
+		width: 80vw;
+	}
+	#right-container{
+		width: 25vw;
+	}
+	#left-container{
+		margin-left: -2rem;
+	}
+	
+}
 
 @media (max-width: 768px) {
+	#top-sub-nav::after{
+		width: 100vw;
+	}
 	.mobile-nav{
 		display: block;
 	}
@@ -945,21 +1031,124 @@ footer ol li{
 	#features ul{
 		width: 90vw;
 	}
-	h1{
+	h1, #X-ray h1{
 		font-size: 5.75rem;
 	    line-height: 5.75rem;
 	    font-weight: 600;
 	    letter-spacing: -0.374px;
 	}
+	h2, #computational-audio h2{
+		font-size: 4rem;
+		line-height: 4.5rem;
+		font-weight: 600;
+	}
+	H5{
+		font-size: 1.3rem;
+		font-weight: normal;
+		line-height: 1.9rem;
+		font-weight: 600;
+	}
+	H6, .description h6{
+		font-size: 1.2rem;
+		font-weight: normal;
+		line-height: 1.4rem;
+	}
+	#audio-section h5:nth-child(3) {
+		font-size: 1.1rem;
+		line-height: 1.8rem;
+		width: 50vw;
+	}
+	#hero-section h3{
+		width: 90vw;
+	}
 	#crown h6{
 		width: 90vw;
 	}
-	#colors-section .flex{
-		flex-direction: column;
+	.description, .description h6{
+		width: 90vw;
 	}
+	#colors-section .flex{
+		flex-direction: row;
+		height: 30vh;
+	}
+	#colors-section .flex:nth-child(1){
+		height: 15vh;
+	}
+
 	#colors-section .flex .color-tabs {
-    	align-self: flex-start;
-    	margin-top: 4rem;
+    	align-self: flex-end;
+    	margin-top: 0;
+	}
+	.three-mid-container img{
+		height: 70%;
+	}
+	.three-right-container{
+		margin-top: 16rem;
+	}
+	#design-section h1{
+		width: 90vw;
+	}
+	#anatomy{
+		height: 96vh;
+	}
+	.flex{
+		height: 76vh;
+	}
+	.three-left-container h6:nth-of-type(2){
+		padding: 40rem 0 0 0 !important;
+	}
+	#X-ray .left-container img {
+		height: 70vh;
+	}
+	#X-ray .right-container {
+		height: 50vh;
+		margin-top: 0;
+	}
+	#X-ray .right-container p {
+		font-size: 1.1rem;
+		line-height: 1.3rem;
+		width: 30vw;
+		padding: 18rem 0 8rem 0;
+	}
+	#video-section li {
+		font-size: 3.5rem;
+	}
+	.earphone-side-shot img {
+		height: 30vh;
+	}
+	#hero-earphone{
+		height: 105vh;
+	}
+	#hero-earphone h1{
+		margin-top: 0;
+		left: 50%;
+		top: 341px;
+		position: absolute;
+		transform: translate(-50%);
+		z-index: -1;
+		width: 100vw;
+	}
+	#others-section{
+		width: 100vw;
+	}
+	#others-section .row {
+		border-radius: 0;
+	}
+	#right-container img {
+		border-top-right-radius: 0;
+    	border-bottom-right-radius: 0;
+	}
+	#engraving #right-container img{
+		width: 50vw;
+		right: 0;
+    	position: absolute;
+	}
+	.legal, .legal::after{
+		width: 90vw;
+	}
+	.site-map{
+		flex-direction: column;
+		width: 90vw;
 	}
 }
 
